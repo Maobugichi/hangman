@@ -39,6 +39,7 @@ export default function MainPage() {
                 return(
                     (
                         <Slate
+                         
                          text={item}
                          id={index}
                         />
@@ -133,7 +134,7 @@ export default function MainPage() {
         )
      })
     return(
-        <section className="overflow-hidden font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto  min-h-[100vh] lg:min-h-[100vh] flex flex-col gap-10">
+        <section className="overflow-hidden pb-4 font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto  min-h-[100vh] lg:min-h-[100vh] flex flex-col gap-10">
          <Modal
          openModal={openModal}
          setModal={setModal}
@@ -148,7 +149,7 @@ export default function MainPage() {
            setModal={setModal}
            setTrack={setTrack}
           />
-          <div  ref={divRef} className="w-[83%] mx-auto flex flex-col items-center h-auto min-h-[430px]  gap-[80px]">
+          <div  ref={divRef} className=" lg:w-[83%] w-[95%] mx-auto flex flex-col items-center h-auto min-h-[430px]  gap-[80px]">
             <ul className="flex flex-wrap items-center lg:gap-3  gap-2 text-center">
                 {track}
             </ul>

@@ -17,7 +17,7 @@ export default function Category() {
      })
 
     return(
-        <section className="font-memoirs overflow-hidden  bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto lg:min-h-[115vh] min-h-[100vh] flex flex-col gap-10 w-full">
+        <section className="font-memoirs pb-4 overflow-hidden  bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto lg:min-h-[115vh] min-h-[100vh] flex flex-col gap-10 w-full">
          <Header
           text="Pick a Category"
          />
