@@ -170,7 +170,7 @@ export function  Slate({text, id}) {
           <motion.span
             whileInView={{scale: 1.1, backgroundColor:"#2463FF", color:"rgb(255,255,255)"}} 
             transition={{ type:'spring', damping: 15 , stiffness: 190}}
-            className="hidden uppercase text-transparent text-[50px] h-[83px] rounded-3xl lg:w-[58px] w-[50px] bg-[#2463FF] from-[rgba(255,255,255,0.25)] to-[rgba(255,255,255,0.25)] shadow-purple-sh hover:bg-gradient-to-r  place-items-center ">{text}</motion.span>
+            className="hidden uppercase text-transparent text-[50px] h-[80px] rounded-3xl lg:w-[58px] w-[40px] bg-[#2463FF] from-[rgba(255,255,255,0.25)] to-[rgba(255,255,255,0.25)] shadow-purple-sh hover:bg-gradient-to-r  place-items-center ">{text}</motion.span>
         </motion.li>
     )
 }

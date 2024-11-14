@@ -15,11 +15,11 @@ export default function Manual() {
         )
     })
     return(
-     <section className="font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] lg:h-auto lg:min-h-[110vh] flex flex-col gap-3">
+     <section className="overflow-hidden font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto min-h-[110vh] flex flex-col gap-3">
          <Header
           text="How to Play"
          />
-         <div className="w-[85%] mx-auto h-auto min-h-[430px] flex  justify-between">
+         <div className="lg:w-[85%] w-[90%] mx-auto h-auto min-h-fit flex lg:flex-row flex-col justify-between gap-3">
            {ruleMap}
          </div>
         

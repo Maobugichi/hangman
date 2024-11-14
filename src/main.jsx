@@ -18,15 +18,15 @@ const router = createBrowserRouter([
     element: <HomePage/>
   },
   {
-   path:"manual/:manualId",
+   path:"/hangman/manual/:manualId",
    element: <Manual/>
   },
   {
-    path:"category/:categoryId",
+    path:"/hangman/category/:categoryId",
     element: <Category/>
   },
   {
-    path:"mainpage/:mainpageId",
+    path:"/hangman/mainpage/:mainpageId",
     element: <MainPage/>
   }
 ])

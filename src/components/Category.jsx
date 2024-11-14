@@ -48,7 +48,7 @@ function Block({text}) {
         setTimeout(() => {
             const stored = JSON.parse(localStorage.getItem('state'))
             console.log(stored)
-            navigate("/mainpage/1", { state: stored  })
+            navigate("/hangman/mainpage/1", { state: stored  })
           }, 0) 
     }
 

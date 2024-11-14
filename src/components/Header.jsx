@@ -5,7 +5,7 @@ import prev from "../assets/hangman-back.svg"
 export default function Header({text}) {
     return(
         <header className="flex items-center lg:gap-[27%] gap-10 lg:h-[180px] h-[120px]  w-[85%]  mx-auto">
-          <Link to="/">
+          <Link to="/hangman">
             <Button
             src={prev}
             width="w-[35px]"

@@ -23,12 +23,12 @@ export default function Modal({ openModal,content , setModal , setWidth}) {
  }, [openModal,modalRef])
    
    return(
-    <dialog className="overflow-hidden w-full h-full  place-items-center  " ref={modalRef}  style={{ backgroundColor: 'rgba(26, 4, 58, 0.7)' }}>
+    <dialog className="overflow-hidden fixed  w-screen h-[100vh]  place-items-center  " ref={modalRef}  style={{ backgroundColor: 'rgba(26, 4, 58, 0.7)' }}>
     <motion.div 
      initial={{scale: 1}}
      whileInView={{scale: 1.1}}
      transition={{ type:'spring', damping: 15 , stiffness: 190}} 
-     className="lg:w-[30%] w-[90%]  to-[rgba(0, 20, 121, 0.83)] relative  top-[20%]  flex flex-col items-center justify-center  rounded-[3.5rem] bg-gradient-to-b from-[#344aba] shadow-menu-sh h-[420px]  w-[410px]">
+     className="lg:w-[30%] w-[80%]  to-[rgba(0, 20, 121, 0.83)] relative  top-[20%]  flex flex-col items-center justify-center  rounded-[3.5rem] bg-gradient-to-b from-[#344aba] shadow-menu-sh h-[420px]  w-[410px]">
              <h1 className="absolute top-[-24%] text-[110px] stroke-[#243041] stroke-[8] leading-[120%] tracking-[-0.068rem] bg-gradient-to-b from-[#67b6ff] to-white bg-clip-text  text-transparent ">{content.paused}</h1>
              <div className="  w-[90%] rounded-lg h-[80%] flex flex-col items-center justify-center gap-[15%] ">
                 <motion.button
@@ -51,7 +51,7 @@ export default function Modal({ openModal,content , setModal , setWidth}) {
                  className="w-[60%] h-[15%] lg:text-xl text-2xl font-extrabold  text-white  uppercase rounded-full  bg-[#2463FF] from-[rgba(255,255,255,0.25)] to-[rgba(255,255,255,0.25)] shadow-purple-sh hover:bg-gradient-to-r"
                 >
                     <Link
-                     to={"/category/1"}
+                     to={"/hangman/category/1"}
                      className="uppercase rounded-full block w-full"
                     >
                       New category
