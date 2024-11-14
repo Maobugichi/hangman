@@ -67,7 +67,7 @@ export default function Modal({ openModal,content , setModal , setWidth}) {
                 >
                     <Link 
                      className="rounded-full block w-full"
-                     to={"/"}>
+                     to={"/hangman"}>
                       Quit game
                     </Link>
                 </motion.button>
