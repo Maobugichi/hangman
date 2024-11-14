@@ -14,7 +14,7 @@ import { useContext , useState } from 'react'
 import { GameContext , MyProvider } from './components/GameContext.jsx'
 const router = createBrowserRouter([
   {
-    path:"/",
+    path:"/hangman",
     element: <HomePage/>
   },
   {
