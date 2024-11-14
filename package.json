@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "git branch -D gh-pages && git push origin --delete gh-pages && npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
