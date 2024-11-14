@@ -28,7 +28,7 @@ export default function Modal({ openModal,content , setModal , setWidth}) {
      initial={{scale: 1}}
      whileInView={{scale: 1.1}}
      transition={{ type:'spring', damping: 15 , stiffness: 190}} 
-     className="lg:w-[30%] w-[80%]  to-[rgba(0, 20, 121, 0.83)] relative  top-[20%]  flex flex-col items-center justify-center  rounded-[3.5rem] bg-gradient-to-b from-[#344aba] shadow-menu-sh h-[420px]  w-[410px]">
+     className="lg:w-[30%] w-[80%] mx-auto  to-[rgba(0, 20, 121, 0.83)] relative  top-[20%]  flex flex-col items-center justify-center  rounded-[3.5rem] bg-gradient-to-b from-[#344aba] shadow-menu-sh h-[420px]  w-[410px]">
              <h1 className="absolute top-[-24%] text-[110px] stroke-[#243041] stroke-[8] leading-[120%] tracking-[-0.068rem] bg-gradient-to-b from-[#67b6ff] to-white bg-clip-text  text-transparent ">{content.paused}</h1>
              <div className="  w-[90%] rounded-lg h-[80%] flex flex-col items-center justify-center gap-[15%] ">
                 <motion.button
