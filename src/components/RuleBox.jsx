@@ -8,7 +8,7 @@ export default function RuleBox({num, title, text}) {
             <h3 className="lg:text-[65px] text-[30px] text-[#2463ff]">{num}</h3>
             <h2 className="lg:text-[40px] text-[25px] uppercase tracking-wider text-[#261676]">{title}</h2>
             </div>
-            <p className="lg:text-[20px] w-[90%] lg:tracking-wider lg:text-center text-[#887dc0]  leading-tight">{text}</p>
+            <p className="lg:text-[20px] w-[90%] tracking-wider lg:text-center text-[#887dc0]  leading-tight">{text}</p>
           </div>
         </div>
     )

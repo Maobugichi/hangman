@@ -23,7 +23,6 @@ export default function MainPage() {
     const [hang,setHang] = useState()
     const {state} = location
     const game = useContext(GameContext)
-     
     useEffect(() => {
      if (run) {
         const uj =  state.targets.flatMap(item => {   
@@ -35,17 +34,7 @@ export default function MainPage() {
        const randomNumber = Math.round(Math.random() * uj.length)
        const strArr =  uj[randomNumber].name.split("")
        const mainTexts = strArr.filter(arr => arr.trim() !== '')
-       const hangTexts = mainTexts.map((item,index) => {
-                return(
-                    (
-                        <Slate
-                         
-                         text={item}
-                         id={index}
-                        />
-                    )
-                )
-        })
+       const hangTexts = mainTexts.map((item,index) => <Slate   text={item} id={index}/>)
        setHang(hangTexts)
       }     
     }, [state,width])
@@ -95,8 +84,6 @@ export default function MainPage() {
            
          }
      }, [activeIndex,width])
-
-    
     const  alphabeth = Array.from({length:26}, (_,i) => String.fromCharCode(65 + i))
     const checkValue = useCallback((e) => {
         e.target.setAttribute("disabled",true)
@@ -124,6 +111,7 @@ export default function MainPage() {
       const alpha = alphabeth.map(item => {
         return(
             <motion.button
+             key={item}
              whileHover={ { scale: 1.1 , backgroundColor:"#2463FF", color:"rgb(255,255,255)"}} 
              transition={{ type:'spring', damping: 15 , stiffness: 190}}
              className="bg-white lg:w-[95px] w-[40px] lg:h-[65px] h-[70px] lg:text-4xl text-3xl lg:rounded-xl rounded-full disabled:opacity-20 disabled:cursor-not-allowed"
@@ -136,12 +124,12 @@ export default function MainPage() {
     return(
         <section className="overflow-hidden pb-4 font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto  min-h-[100vh] lg:min-h-[100vh] flex flex-col gap-10">
          <Modal
-         openModal={openModal}
-         setModal={setModal}
-         content={content}
-         setWidth={setWidth}
-         setRedirect={setRedirect}
-         setChk={setChk}
+          openModal={openModal}
+          setModal={setModal}
+          content={content}
+          setWidth={setWidth}
+          setRedirect={setRedirect}
+          setChk={setChk}
          />
           <MainHeader
            text={ state.category}

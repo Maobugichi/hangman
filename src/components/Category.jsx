@@ -7,14 +7,8 @@ import { GameContext } from "./GameContext"
 
 export default function Category() {
     const game = useContext(GameContext)
-    const {isState, setState , openModal} = game
     const categories = ["movies", "tv shows", "countries", "capital cities", "animals", "sports"]
-    const categoryBlock = categories.map(category => {
-        return(
-              <Block
-              text={category}/> 
-          )
-     })
+    const categoryBlock = categories.map(category => <Block key={category} text={category}/> )
 
     return(
         <section className="font-memoirs pb-4 overflow-hidden  bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto lg:min-h-[115vh] min-h-[100vh] flex flex-col gap-10 w-full">
@@ -32,7 +26,7 @@ export default function Category() {
 function Block({text}) {
  const game = useContext(GameContext)
  const {isState, setState , openModal} = game
- const [isTarget, setIsTarget] = useState()
+ //const [isTarget, setIsTarget] = useState()
  const navigate = useNavigate()
 
     useEffect(() => {
@@ -51,8 +45,6 @@ function Block({text}) {
             navigate("/hangman/mainpage/1", { state: stored  })
           }, 0) 
     }
-
-    
     return(
         <motion.button 
          initial={{y:0}}
