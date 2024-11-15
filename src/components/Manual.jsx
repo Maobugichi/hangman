@@ -15,7 +15,7 @@ export default function Manual() {
         )
     })
     return(
-     <section className="overflow-hidden font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto min-h-[110vh] flex flex-col gap-3">
+     <section className="overflow-hidden font-memoirs bg-opacity-75 bg-gradient-to-b from-[#1a043a] to-[#151278] h-auto min-h-[100vh] lg:min-h-[110vh] flex flex-col gap-3">
          <Header
           text="How to Play"
          />
